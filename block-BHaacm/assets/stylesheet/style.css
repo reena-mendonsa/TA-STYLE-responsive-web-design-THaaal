@@ -1,0 +1,273 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************CUstom Code***********/
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/*******Flexible container**********/
+.container{
+    max-width:1400px;
+    width:100%;
+    margin:0 auto;
+    padding:0 16px;
+    
+
+}
+
+.full-width{
+    width:100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-center{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.flex32{
+    flex:0 1 32%;
+    
+}
+
+.flex48{
+    flex:0 1 48%;
+    
+}
+/*******Varaiables********/
+:root{
+    --btnColor:#37B667;
+    --textColor:#020511;
+    --textColor2:#97989B;
+    --anchorColor:#ffff;
+    --primaryColor:#222946;
+}
+
+.padding{
+    padding:20px 0;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+
+.btn{
+    margin:30px 0;
+    padding:14px 30px;
+    border:none;
+    text-transform: capitalize;
+    font-size:22px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btnColor{
+    background-color: var(--btnColor);
+    color:var(--anchorColor);
+}
+
+/*************header*************/
+.header{
+    background-color: var(--primaryColor);  
+    padding:40px ,0 ;
+}
+
+.nav-links a{
+    color:var(--anchorColor);
+    padding:0 20px;
+    text-decoration: none;
+    font-size:24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover{
+    color:var(--btnColor);
+}
+
+/***********Hero Section************/
+
+.hero{
+    background-color: #E9ECFC;
+    padding:40px 0;
+   
+}
+
+.hero-desc h1{
+   font-size: 48px;
+ 
+   padding-bottom: 20px;
+}
+
+.hero-desc p{
+    font-size:20px;
+    color:var(--textColor2);
+    line-height: 1.5;
+    padding:10px;
+    margin-right:50px;
+    margin-bottom: 40px;
+}
+
+/*************BLog****************/
+.blog{
+    padding:40px 0;
+    margin-bottom: 30px;
+}
+.blog h2{
+    text-align: center;
+    font-size:40px;
+    padding:40px 0;
+    
+}
+
+.blog-article h3{
+    font-size:28px;
+    padding:20px 0;
+    
+}
+
+.blog-article p{
+    color:var(--textColor2);
+    font-size:16px;
+    line-height: 1.2;
+    padding-bottom: 40px;
+}
+.blog-img img{
+  height:100%;
+}
+
+
+/**********Footer**********/
+.footer{
+    background-color: var(--primaryColor);
+    padding:30px 0;
+}
+
+.footer-nav{
+    color:var(--textColor2);
+    font-size:26px;
+    font-weight: 600;
+}
+
+.footer-nav i{
+    padding:0 20px;
+    border-radius:5px;
+    font-size: 30px;
+}
+
+/****************Smaller Screens ***********/
+
+@media screen and (max-width:768px){
+    
+    .flex48,.flex32{
+        flex:1 1 100%;
+        margin:24px 0;
+        
+    }
+    .flex{
+        
+       flex-wrap:wrap;
+
+    }
+    .sec-hero{
+        flex-direction: column-reverse;
+    }
+
+    .justify-content{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .nav-links{
+        margin-top:20px;
+        
+    }
+    .nav-links a{
+        font-size:18px;
+    }
+    .hero-desc h1{
+       font-size:30px;
+    }
+    .footer-nav{
+        margin-top:20px;
+    }
+    .footer{
+        padding:10px 0;
+    }
+}
