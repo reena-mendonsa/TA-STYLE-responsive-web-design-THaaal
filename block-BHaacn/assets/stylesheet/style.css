@@ -233,8 +233,7 @@ a{
     margin-left:1rem;
 }
 .bars i{
-    display: none;
-}
+    display: none;}
 #toggle{
     display: none;
 }
@@ -402,32 +401,10 @@ a{
     color:var(--textColor2);
 }
 
-/********Event img**************/
+/********Event video**************/
 
-.event-img{
-    border-radius: 0.8rem;
-    position: relative;
-    /* margin-top:18rem; */
-    /* margin-left:-43rem; */
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-
-}
-
-.caret-btn{
-    padding: 0.4rem 3rem;
-    background-color: #ffff;
-    color:var(--btnColor);
-    font-size:5rem;
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    margin-top:18rem;
-    margin-left:-43rem;
-    z-index:2;
-    border-radius: 50%;
+.event-video iframe{
+    border-radius: 15px;
 }
 
 /************LAtest News******************/
@@ -516,16 +493,21 @@ a{
 }
 
 @media screen and (max-width:992px){
+    html{
+        font-size: 14px;
+    }
     .container{
         max-width:960px;
     }
 }
 
 @media screen and (max-width:768px){
-
+    html{
+        font-size: 12px;
+    }
     .container{
         max-width:758px;
-        width:100%;
+    
     }
     
     .flex100{
@@ -577,19 +559,15 @@ a{
         position: relative;
         margin-left:1rem;
         margin-top:16rem;
+        z-index: -1;
     }
     .date-small{
         border-radius:5px;
         padding:0.6rem 1rem;
         position:absolute;
         left:0;
-        /* right:0; */
-        /* top:0; */
-        /* bottom:0; */
-
-        /* margin-left:1rem; */
-        /* margin-top:16rem; */
-        z-index:3;
+        
+        /* z-index:1; */
         
     }
     .date-small span{
@@ -621,6 +599,25 @@ a{
     
    
 }
+
+/**********Media Video******************/
+.iframe-container{
+    height:0;
+    width:100%;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+iframe{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    border-radius: 15px;
+}
 /******Navigation Mobile************/
 .nav{
     display:none;
@@ -631,10 +628,11 @@ a{
     top:0;
     width:100%;
     height:100vh;
-    background-color: rgb(53,35,166,0.7);
+    background-color: rgba(37, 21, 141, 0.9);
      /* padding:100px 200px;  */
      padding-top:100px;
      padding-left: 200px;
+     z-index: 9;
 }
 .nav-links li{
     margin:30px 0;
@@ -643,16 +641,20 @@ a{
     display: inline-block;
 }
 .bars{
-    font-size:1.2rem;
+    font-size:2rem;
     color:#ffff;
-    position: relative;
+    /* position: relative; */
+    position: fixed;
     right:32px;
     top:16px;
-    z-index: 99;
+    z-index: 990;
 }
-
+.bars i{
+    display: inline-block;
+}
 .brand{
-    position: relative;
+    /* position: relative; */
+    position: fixed;
     left:32px;
     top:16px;
     z-index: 99;
@@ -661,7 +663,16 @@ a{
 }
 /********more smaller screen*********/
 @media screen and (max-width:576px){
-    .container{
-        max-width:540px;
+    html{
+        font-size: 10px;
     }
+    .container{
+        max-width:560px;
+    
+    }
+
+
 }
+
+
+
