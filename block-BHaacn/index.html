@@ -1,0 +1,305 @@
+<!--- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed.
+-->
+
+
+<!DOCTYPE  html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Events 2020|Responsive web Assignment2</title>
+        <!--ViewPort-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--CSS-->
+        <link rel="stylesheet" href ="assets/stylesheet/style.css">
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+        <!--Font Awesome Icons-->
+        <script src="https://kit.fontawesome.com/471db95236.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container flex justify-content ">
+                <a class="brand" href="#">Alt Events</a>
+                <label class="bars" for="toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input id="toggle" type="checkbox">
+                <nav class="nav">
+                <ul class="flex justify-content nav-links column">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="btn btnColor" href="#">Join Us</a></li>
+                </ul>
+                </nav>
+            </div>
+
+        </header>
+        <section class="hero padding">
+          <article class="container flex justify-content align-center  wrap col-rev center">
+              <div class="flex50 hero-text flex100 small-screen">
+                <h1 class="heading ">Web Developer Conference <strong class="strong">2020</strong></h1>
+                <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <a href="#" class="btn btnColor">Register Now</a>
+               </div>
+              <div class="flex30 hero-image flex100">
+                <img  class="full-width" src="assets/hero.png" alt="party">
+              </div>
+          </article>
+
+        </section>
+        <!--Section 2-->
+        <section class="about padding center">
+            <article class="container flex justify-content align-center wrap">
+              <div class="flex48 flex100">
+                  <img class="full-width" src="./assets/about.png" alt="about">
+              </div>
+              <div class="flex48 about-text flex100">
+                  <h2 class="heading small-screen2">About the Event</h2>
+                  <p class="para small-screenp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                  <a href="#" class="btn btnColor">Know More</a>
+              </div>
+            </article>
+        </section>
+        <!--Join-->
+        <section class="join padding">
+            
+                <h2 class="heading">
+                    Why you should join
+                </h2>
+            <div class="container flex justify-content wrap">    
+                <div class="flex32 border box flex-60" >
+                    <span class="numbers"><strong class="strong">1</strong></span>
+                    <h3 class="heading-sec">Network</h3>
+                    <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                </div>
+                <div class="flex32 border box flex-60">
+                    <span class="numbers"><strong class="strong">2</strong></span>
+                    <h3 class="heading-sec">Great Speakers</h3>
+                    <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                </div>
+                <div class="flex32 border box flex-60">
+                    <span class="numbers"><strong class="strong">3</strong></span>
+                    <h3 class="heading-sec">Information</h3>
+                    <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                </div>
+            </div>
+
+        </section>
+        <!--Schedule-->
+        <section class="schedule padding">
+            <h2 class="heading">Schedule</h2>
+            <div class="container flex justify-content align-center margins wrap">
+                <div class="flex12 date date-small">
+                    <span>06</span>
+                    <span>Sept</span>
+                </div>
+                <div class="line no-line"></div>
+                <div class="flex16 font-0 flex100">
+                    <img class="full-width schedule-img" src="assets/schedule-01.jpg" alt="schedule1">
+                </div>
+                <dv class="flex60 schedule-text flex100 center">
+                    <h3 class="heading-sec ">Digital World Event Conversation</h3>
+                    <p class="para small-screenp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
+                </div>
+            </div>
+            <!--2-->
+            <div class="container flex justify-content align-center margins wrap">
+                <div class="flex12 date  date2 date-small">
+                    <span>07</span>
+                    <span>Sept</span>
+                </div>
+                <div class="line no-line"></div>
+                <div class="flex16 font-0 flex100">
+                    <img class="full-width schedule-img" src="assets/schedule-02.jpg" alt="schedule1">
+                </div>
+                <div class="flex60 schedule-text flex100 center">
+                    <h3 class="heading-sec">Web Designing Conversation</h3>
+                    <p class="para small-screenp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
+                </div>
+            </div>
+            
+            <!--3-->
+            <div class="container flex justify-content align-center margins wrap">
+                <div class="flex12 date date2 date-small">
+                    <span>08</span>
+                    <span>Sept</span>
+                </div>
+                <div class="line no-line"></div>
+                <div class="flex16 font-0 flex100">
+                    <img class="full-width schedule-img" src="assets/schedule-03.jpg" alt="schedule1">
+                </div>
+                <div class="flex60 schedule-text flex100 center">
+                    <h3 class="heading-sec">Web Development Conversation</h3>
+                    <p class="para small-screenp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
+                </div>
+            </div>
+
+            <!--4-->
+            <div class="container flex justify-content align-center margins wrap">
+                <div class="flex12 date date2 date-small">
+                    <span>09</span>
+                    <span>Sept</span>
+                </div>
+                
+                <div class="flex16 font-0 flex100">
+                    <img class="full-width schedule-img" src="assets/schedule-04.jpg" alt="schedule1">
+                </div>
+                <div class="flex60 schedule-text flex100 center">
+                    <h3 class="heading-sec">Digital Marketing Conference</h3>
+                    <p class="para small-screenp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
+                </div>
+            </div>
+            <div class="flex flex-center">
+              <a href="#" class="btn btnColor">Download Schedule</a>
+            </div>
+        </section>
+        <!--Icons-->
+        <section class="icons padding">
+            <div class="container flex justify-content wrap">
+                <div class="flex25 flex100">
+                      <div>
+                      <img class="icons-img" src="assets/speaker.png" alt="speaker">
+                    </div>
+                    <div class="icon-desc">
+                        <span class="figures">20+</span>
+                        <span class="desc">Great Speakers</span>
+                    </div>
+                </div>
+                <div class="flex25 box-color flex100">
+                    <img class="icons-img" src="assets/idea.png" alt="idea">
+                    <div class="icon-desc">
+                        <span class="figures text-color">50+</span>
+                        <span class="desc text-color"> Total Topic</span>
+                    </div>
+                </div>
+                <div class="flex25 flex100">
+                    <img  class="icons-img"  src="assets/participants.png" alt="participants">
+                    <div class="icon-desc">
+                        <span class="figures">300+</span>
+                        <span class="desc">Participants</span>
+                    </div>
+                </div>
+                <div class="flex25 flex100">
+                    <img class="icons-img" src="assets/sponsor.png" alt="Sponsers">
+                    <div class="icon-desc">
+                        <span class="figures">20+</span>
+                        <span class="desc">Sponsers</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--video-->
+        <section class="event padding">
+           <div class="container event-video">
+               <figure class="iframe-container">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </figure>
+            
+              
+           </div>
+        </section>
+        <!--Latest News-->
+        <section class="latest-news padding">
+         <h2 class="heading">Our Latest News</h2>
+         <div class="container flex justify-content wrap">
+           <div class="flex32 news flex100" >
+             <img  class="full-width" src="assets/news-01.png" alt="news1">
+             <div >
+                 <h4 class="heading-sec">
+                     How to build a great portfolio as a beginner developer
+                 </h4>
+                 <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+             </div>
+             <div class="news-link">
+                 <a href="#" >Read More</a>
+             </div>
+           </div>
+           <div class="flex32 news flex100">
+            <img  class="full-width" src="assets/news-02.png" alt="news2">
+            <div >
+                <h4 class="heading-sec">
+                    4 common situations while using Git and how to solve them
+                </h4>
+                <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+            </div>
+            <div class="news-link active">
+                <a href="#" >Read More</a>
+            </div>
+           </div>
+           <div class="flex32 news flex100">
+            <img  class="full-width" src="assets/news-03.png" alt="news3">
+            <div >
+                <h4 class="heading-sec">
+                    Basic Unix commands that you should know
+                </h4>
+                <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+            </div>
+            <div class="news-link">
+                <a href="#" >Read More</a>
+            </div>
+           </div>
+          </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer1 ">
+          <div class="container flex justify-content align-center">
+            <div class="flex30 ">
+               <a href="#" ><img src="assets/footer-logo.png" alt="logo"></a>
+            </div>
+            <div class="flex32">
+                <div class="footer-link">
+                   <a href="#">Quick Links</a>
+                </div>
+                <ul class="footer-menu flex">
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">AboutUs</a></li>
+                    <li><a href="#">ContactUs</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="flex32 align">
+                <div class="footer-link ">
+                   <a href="#">Follow us</a>
+                </div>
+                <div class="media-link">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                
+                </div>
+            </div>
+          </div>
+        </footer>
+        <footer class="footer2 ">
+            <small class="copyrt"> &copy; AltCampus Services Pvt Ltd, 2018-present</small>
+        </footer>
+    </body>
+</html>
